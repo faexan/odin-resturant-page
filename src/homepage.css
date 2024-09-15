@@ -1,0 +1,30 @@
+:root {
+    --textColor: rgb(32, 31, 31);
+    --logoColor: #E53935;
+    --yellow: #FFCC00;
+    --beige: #F0E68C;
+    --bodyColor: #F4F4F4;
+}
+
+
+.HPMimg {
+    width: 100%;
+}
+
+.contentC {
+    width: 90vw;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HPdiv2 {
+    display: flex;
+}
+
+.HPheading1 {
+    color: var(--logoColor);
+}
