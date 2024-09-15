@@ -1,5 +1,5 @@
 :root {
-    --textColor: rgb(32, 31, 31);
+    --textColor: rgb(66, 60, 60);
     --logoColor: #E53935;
     --yellow: #FFCC00;
     --beige: #F0E68C;
@@ -23,8 +23,89 @@
 
 .HPdiv2 {
     display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    padding-left: 55px;
 }
 
 .HPheading1 {
+    color: var(--textColor);
+    letter-spacing: 0.7px;
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.h11sp {
     color: var(--logoColor);
+}
+
+.HPOrderNowBtn {
+    font-weight: 700;
+    font-size: larger;
+    border: none;
+    background-color: var(--logoColor);
+    color: var(--bodyColor);
+    height: 50px;
+    width: 230px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.HPpara1 {
+    letter-spacing: 0.6px;
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+.HPdiv3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.HPdiv4 {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.HPBS {
+    border: 1px solid black; 
+}
+
+.HPBs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HPBs p {
+    text-align: justify;
+    width: 85%;
+    padding: 5px;
+}
+
+.BSimg {
+    max-width: 250px;
+    max-width: 250px;
+}
+
+.BSheading {
+    color: var(--logoColor);
+    padding-bottom: 5px;
+}
+
+.BSprice {
+    padding: 5px;
+}
+
+.addtobtn { 
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--textColor);
+    color: var(--bodyColor);
+    font-size: large;
+    margin: 10px;
 }
