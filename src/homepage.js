@@ -1,18 +1,13 @@
 import mainImg from "./homepage.png";
 import krunchBurger from "./Images/krunchBurger.png";
 import mightyZinger from "./Images/mightyZinger.png";
-import Hazlenut from "./Images/Hazlenut-Iced-Latte.png"
+import chickChips from "./Images/chickchips.png";
+import family from "./Images/family.png";
 const homepage = function() {
     const content_div = document.getElementById("content");
     pageOneTwo(content_div);
     pageThree(content_div);
-    // const h1 = document.createElement('h1');
-    // h1.innerHTML = "Hello from homepage.js";
-    // h1.classList.add("contentC")
-    // content_div.appendChild(h1);
-
-
-
+    newletterSec(content_div);
 
 
 
@@ -86,36 +81,10 @@ const bestsellersGrid = function(content_div) {
     const HPBS4 = document.querySelector(".HPBs30");
 
 
-    menuCard(HPBS2, mightyZinger, "Mighty Zinger", "Our signature Zinger but Bigger! Double Zinger fillet with a combination of spicy and plain mayo, lettuce and cheese- sandwiched between a sesame seed bun", "Rs 799");
-    menuCard(HPBS3, Hazlenut, "Hazelnut Iced Latte", "A cup of cold and refreshing Hazelnut coffee mixed with base of energizing espresso waiting to be picked up", "Rs 500")
-
-
-
-    const BSheading = document.createElement("h2");
-    const BSpara = document.createElement("p");
-    const img1 = document.createElement("img");
-    const BSprice = document.createElement("h3");
-    const BSbtn = document.createElement("button");
-    BSheading.innerText = "Krunch Burger";
-    BSpara.innerText = "Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun";
-    BSprice.innerText = "Rs 290";
-    BSbtn.innerText = "Add to Cart"
-    img1.src = krunchBurger;
-    BSbtn.type = "button";
-    img1.classList.add("BSimg");
-    BSheading.classList.add("BSheading");
-    BSpara.classList.add("BSpara");
-    BSprice.classList.add("BSprice");
-    BSbtn.classList.add("addtobtn");
-    HPBS1.appendChild(img1);
-    HPBS1.appendChild(BSheading);
-    HPBS1.appendChild(BSpara);
-    HPBS1.appendChild(BSprice);
-    HPBS1.appendChild(BSbtn);
-
-
-
-
+    menuCard(HPBS1, krunchBurger, "Krunch Burger", "Krunch fillet, spicy mayo, lettuce, sandwiched between a sesame seed bun with a wrapper to fold it", "Rs 790")
+    menuCard(HPBS2, mightyZinger, "Mighty Zinger", "Our signature Zinger but Bigger! Double Zinger fillet with a combination of spicy and plain mayo", "Rs 799");
+    menuCard(HPBS3, chickChips, "Chicken Chips", "2 pieces of Hot and Crispy Fried Chicken + Fries + Dinner roll + signature Vietnamese Sauce", "Rs 590")
+    menuCard(HPBS4, family, "Family Festival 1", "It includes 4 Krunch burgers + 4 pieces Hot and Crispy Chicken + 2 Dinner Rolls + 1.5 Liter drink for the fam", "Rs 2250"    );
 
     
 
@@ -148,4 +117,53 @@ const menuCard = function(div, img, name, des, price) {
     div.appendChild(BSbtn);
 }
 
+
+const newletterSec = function(content_div) {
+    const div1 = document.createElement("div");
+    const h1 = document.createElement("h1");
+    const NLform = document.createElement("form");
+    const NLemail = document.createElement("input");
+    const NLsubbtn = document.createElement("input");
+
+
+    div1.classList.add("contentC");
+    div1.classList.add("HPdiv5")
+    h1.classList.add("NLheading");
+    NLemail.classList.add("NLemail");
+    NLform.classList.add("NLform");
+    NLsubbtn.classList.add("NLbtn");
+
+
+    h1.innerText = "Stay in the loop for exclusive deals!";
+    NLsubbtn.value = "Submit";
+    
+
+    NLemail.type = "email";
+    NLemail.placeholder = "Email";
+    NLsubbtn.type = "submit";
+
+
+    content_div.appendChild(div1);
+    div1.appendChild(h1);
+    NLform.appendChild(NLemail);
+    NLform.appendChild(NLsubbtn);
+    div1.appendChild(NLform);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 export {homepage}
+
+export {menuCard}

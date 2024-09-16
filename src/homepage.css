@@ -1,10 +1,12 @@
 :root {
-    --textColor: rgb(66, 60, 60);
+    --textColor: rgb(51, 48, 48);
     --logoColor: #E53935;
     --yellow: #FFCC00;
     --beige: #F0E68C;
     --bodyColor: #F4F4F4;
 }
+
+
 
 
 .HPMimg {
@@ -69,24 +71,31 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.HPBS {
-    border: 1px solid black; 
+.HPheading2 {
+    margin-bottom: 1%;
 }
 
-.HPBs {
+/* .HPBS {
+
+} */
+
+.HPBs, .menuCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin: 10px;
 }
 
-.HPBs p {
+.HPBs p, .menuCard p {
     text-align: justify;
     width: 85%;
     padding: 5px;
+    min-height: 105px;
 }
 
 .BSimg {
-    max-width: 250px;
+    height: 250px;
     max-width: 250px;
 }
 
@@ -108,4 +117,60 @@
     color: var(--bodyColor);
     font-size: large;
     margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.addtobtn:hover {
+    background-color: var(--logoColor);
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+     
+}
+
+
+
+.HPdiv5 {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.NLheading {
+    padding-bottom: 30px;
+}
+
+.NLform { 
+}
+
+
+.NLemail {
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: var(--bodyColor);
+    outline: none;
+    border-bottom: 2px solid var(--logoColor);
+    font-size: 1.3rem;
+    color: var(--textColor);
+    padding: 7px 0;
+    background: transparent;
+}
+
+
+
+.NLbtn {
+    height: 50px;
+    width: 100px;
+    background-color: var(--logoColor);
+    color: var(--bodyColor);
+    font-size: large;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
 }

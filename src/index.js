@@ -1,8 +1,9 @@
 import "./style.css";
-import "./homepage.css"
+import "./homepage.css";
+import "./menupage.css";
 import { homepage } from "./homepage";
 import { menupage } from "./menupage";
-import { oOnline } from "./aboutpage";
+import { aboutPage } from "./aboutpage";
 
 
 const homeBtn = document.querySelector(".homeBtn");
@@ -34,7 +35,7 @@ menuBtn.addEventListener("click", ()=> {
 oOnlineBtn.addEventListener("click", ()=> {
     console.log("oOnlineClicked")
     cleanContentDiv();
-    oOnline();
+    aboutPage();
 })
 
 
